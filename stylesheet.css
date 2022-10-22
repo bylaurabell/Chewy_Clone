@@ -1,0 +1,32 @@
+/* Chewy Blue Hex Code #1c49c2 */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    flex-wrap: nowrap;
+    background-color: #1c49c2;
+    text-align: center;
+}
+img{
+    width: 10em;
+}
+.btn{
+    background-color: #1c49c2;
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+.btn:hover{
+    background-color: #173ea9;
+    border-radius: 0;
+}
+#halloweengif{
+    width: 2em;
+    height: 2em;
+    padding-bottom: 5px;
+}
+@media (min-width: 500px){
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
