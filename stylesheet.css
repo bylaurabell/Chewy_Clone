@@ -29,4 +29,7 @@ img{
     .navbar {
         flex-wrap: wrap;
     }
+    img .carousel{
+        max-height: 250px;
+    }
 }
