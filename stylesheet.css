@@ -1,42 +1,117 @@
 /* Chewy Blue Hex Code #1c49c2 */
-body{
+html{
     font-family: 'Poppins', sans-serif;
+    background-color: #1c49c2;
 }
-.navbar {
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+nav {
     background-color: #1c49c2;
     text-align: center;
 }
-.container-fluid{
-    justify-content: center;
-    align-content: center;
+.row1 img{
+    width: 125px;
+    padding: 0 15px;
 }
-img{
-    width: 10em;
+.row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white
+}
+.row1 li{
     flex: 1;
+    justify-content: right;
+    align-items: right;
+    padding: auto;
 }
-.btn{
-    background-color: #1c49c2;
+input{
+    flex: 3;
+    border-radius: 5px;
+    height: 1.5rem;
+    width:  20rem;
     border: none;
-    border-radius: 0;
+    box-shadow: none;
+    padding: 5px;
+    margin: 0 15px;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     color: white;
 }
-.btn:hover{
-    background-color: #173ea9;
-    border-radius: 0;
+.row1 li{
+    flex-wrap: nowrap;
+    flex: auto;
+    padding: 5px;
+    list-style-type: none;
+}
+.row2 li{
+    flex: auto;
+    padding: 5px;
+    list-style-type: none;
 }
 #halloweengif{
-    width: 2em;
-    height: 2em;
-    padding-bottom: 5px;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 2px;
 }
-@media (max-width: 450px){
-    navbar{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin: 0 auto;
+.autoship{
+    display: flex;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+}
+.autoship img{
+    height: 30px;
+    margin: 5px;
+}
+.learnmore{
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+    color:#1c49c2;
+    
+}
+.tos{
+    font-weight:100;
+    color: gray;
+    font-size: 10px;
+}
+.jumbotron{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jumbotron img{
+    height: 50vh;
+    width: 100vh;
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media (min-width: 500px){
+   .row1{
+    display: flex-block;
+   }
+    .row2{
+        display: none;
     }
-    .search{
-        width: 100%;
+}
+@media (min-width: 840px){
+    .row1 li{
+        display: flex-block;
+        
     }
+        .row2{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 }
