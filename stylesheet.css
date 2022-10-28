@@ -3,12 +3,16 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .navbar {
-    flex-wrap: nowrap;
     background-color: #1c49c2;
     text-align: center;
 }
+.container-fluid{
+    justify-content: center;
+    align-content: center;
+}
 img{
     width: 10em;
+    flex: 1;
 }
 .btn{
     background-color: #1c49c2;
@@ -25,11 +29,14 @@ img{
     height: 2em;
     padding-bottom: 5px;
 }
-@media (min-width: 500px){
-    .navbar {
-        flex-wrap: wrap;
+@media (max-width: 450px){
+    navbar{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
     }
-    img .carousel{
-        max-height: 250px;
+    .search{
+        width: 100%;
     }
 }
